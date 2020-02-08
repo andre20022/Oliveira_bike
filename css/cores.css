@@ -1,0 +1,165 @@
+@keyframes andando {
+  from {
+
+    margin-left: 0%;
+    
+  }
+
+  to {
+
+    margin-left: 70%;
+  
+  }
+}
+.bike{
+
+  animation-duration: 7s;
+  animation-name: andando;
+  animation-iteration-count: infinite;
+
+}
+
+
+.fonte{
+
+font-family: 'Seymour One', sans-serif;
+
+}
+.vermelho{
+
+	color: red;
+
+}
+
+.azul{
+
+	background-color: darkblue;
+
+}
+.white{
+
+	color: #fff;
+	font-size: 16px;
+
+}
+
+.titulo{
+
+    color: #000;
+   font-family: 'Seymour One', sans-serif;
+	font-weight: bold;
+
+}
+a{
+	text-decoration: none;
+}
+/* estilos */
+ #lista{
+
+	list-style-type: none;
+	display:flex;
+
+}
+
+#lista-contato{
+
+	justify-content: center;
+
+
+}
+.munda:hover{
+
+ transition: 0.5s all;
+ color: red;
+ transform: translate(2px,7px);
+
+}
+.bike_ju{
+
+	width: 20%;
+}
+.borda{
+
+	border: 1px solid black;
+
+}
+.bd{
+
+	background-color: #bbb;
+
+}
+.item-informacao{
+  
+    transition: 0.5s ease-in;
+    padding: 5px;
+    font-family: 'Seymour One', sans-serif;
+    cursor: pointer;
+
+
+}
+.enviar{
+
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	background-color: darkblue;
+	color: white;
+	font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.5s all;
+
+}
+
+.informaçao{
+
+ padding: 5px;
+ border-radius: 5px;
+
+}
+
+.enviar:hover{
+
+    background-color: red;
+
+}
+#lista li{
+
+	
+	flex-direction: row;
+	transition: 0.4s all;
+	padding: 6px;
+	font-weight: bold;
+
+}
+#lista li:hover{
+
+	border-left: 2px solid red;
+	transform: translate(1px,5px)
+
+}
+
+#lista-redes{
+
+	list-style-type: none;
+	display:flex;
+}
+
+#lista-redes li{
+
+	
+	flex-direction: row;
+	transition: 0.4s all;
+	padding: 6px;
+
+}
+#lista-redes li:hover{
+
+	border-left: 2px solid red;
+	transform: translate(1px,5px);
+	transform: rotateZ(-10deg);
+
+}
+body{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

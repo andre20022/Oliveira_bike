@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../css/cores.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+
+ <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar Recado</h5>
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>-->
+        </div>
+        <div class="modal-body">
+            <form action="inderecamento.php?class=Recado&id={id}" method="POST">
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="id" value="{id}">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recado:</label>
+                <input type="text" class="form-control" name="recado" value="{recado}">
+            </div>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Funcionario:</label>
+                <input type="text" class="form-control" name="funcionario" value="{funcionario}">
+            </div>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Descrição:</label>
+                <textarea class="form-control" rows="3" name="descricao">{descricao}</textarea>
+            </div>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Data:</label>
+                <input type="text" class="form-control" name="data" value="{data}" >
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:history.back()">Voltar</a>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+            
+        </form>
+        </div>
+    </div>
+</div>
+</div>  
+
+    <script src="../../js/jquey.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#modal').modal('show');
+        });
+        </script>
+
+</body> 
+</html>
